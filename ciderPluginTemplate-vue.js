@@ -1,4 +1,4 @@
-import { debug } from '../utils/debug'
+'use strict';
 
 Vue.component('plugin.cider-plugin-template-ui', {
   template: `
@@ -8,13 +8,14 @@ Vue.component('plugin.cider-plugin-template-ui', {
       <world />
     </h1>
   `,
-  mounted () {
-    debug('Hello World!')
-  }
-})
 
+  mounted() {
+    debug('Hello World!');
+  }
+
+});
 Vue.component('world', {
   template: `
     <h1>World</h1>
   `
-})
+});
